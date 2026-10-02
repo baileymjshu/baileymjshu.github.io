@@ -1,34 +1,109 @@
 <!DOCTYPE html>
-<html>
+<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
+<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
+<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
+<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
 
-<!-- Richard Davies, Data Science -->
+<!-- Take a look around and make your own copy to adapt for your own use. -->
 
-<!-- CODING LESSON NUMBER 1 -->
-<!-- Commenting your code is vital, vital, vital -->
+<!-- This is a comment -->
+<!-- Comments are not displayed in the browser -->
+<!-- They can be used to leave notes in the code -->
 
-<!-- This is how you add comments to HTML -->
+<html> 
+    <!-- HTML is heirarchial: tags like this define elements on the page. 
+    Each tag does something different. For example:
+        - The <html> tag defines the whole document.
+        - The <h1> tag defines a large heading
+        - The <p> tag defines a paragraph
+        - Tags appear as an opening <div> and closing </div> pair
+    -->
 
-<!-- You can also include
-multi - line comments
-if you find that useful -->
+<head>    
+    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
 
-<!-- To turn text into a comment, use the=is short-cut: CTRL & the "/" key (command + "/" on Mac)-->
+    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
+    <!-- Try swapping to example3.css or another, and take a look at each example.css to see if you understand it-->
+    <link rel="stylesheet" type="text/css" href="Example3.css">
+    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
+    <!-- This is a link to the vega-lite packages which we're using to make graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
 
-<!-- HOW HTML WORKS - THE BASICS -->
-<!-- HTML files have two fundamental parts. (1) The head, (2) The body -->
-
-<!-- The head contains things that you do not see on the page -->
-
-<head>
-    <title>Page Title</title>
+    <style>
+        /* CSS styles can be defined here, or in a separate CSS file */
+        #chartGrid {
+            display: flex;
+        }
+        
+    </style>
 </head>
 
-<!-- The body contains thigs you see -->
-<!-- Most elements both open and close, with the content in the middle -->
-<!-- Indenting is optional, but helps with readability -->
-<body>
-    <h1>Bailey Shuster</h1>
-    <p>Pls work</p>
+<body> 
+<!-- The body tag contains the elements that visitors to our page will see. -->
+    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Bailey Shuster
+    </h1>
+    <p style="margin-top: 0px; color: darkblue">
+        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+        Your Name | <a href="https://www.linkedin.com/in/baileyshuster/?isSelfProfile=true">LinkedIn</a> | <a
+            href="https://github.com/baileymjshu">GitHub</a>
+    </p>
+    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        This is my portfolio for PP434 Automated Data Visualisation for Policymaking. It is compiled of class challenges given over the term.
+    </h3>
+
+    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+    
+<section>
+        <div class="chart-description">
+            <h2>Section 1: Declining Populations</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This chart estimates the population decline for seven countries over the next century.
+            </p>
+        </div>
+
+        <!-- This element will contain our vega-lite chart -->
+        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+    </section>
+
+<section>
+        <div class="chart-description">
+            <h2>Section 2: Comparing Four Ecnomies</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This comparison chart compares the growth of four economies from 1980 to 2025.
+            </p>
+        </div>
+
+        <!-- This element will contain our vega-lite chart -->
+        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+    </section>
+
+    <!-- This is a script, it's a way to run JavaScript code on the page -->
+    <script>
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+        
+        // Do you want to add more graphs?
+        // try defining a new variable for figure_2_spec, adding VegaEmbed for Location2, and adding a new section in the HTML
+        // e.g. 
+        // let figure_2_spec = ...
+        // vegaEmbed('#Location2', figure_2_spec)
+
+        let chart1 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine3.json"; 
+
+        vegaEmbed('#Location1', chart1)
+
+        let chart2 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine10.json";
+
+        vegaEmbed('#Location2', chart2)
+
+    </script>
+
 </body>
+    
 </html>
