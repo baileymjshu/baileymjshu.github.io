@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/eu_seasonal_ha_burns.csv"
+  },
+  "title": {
+    "text": "Weekly Burnt Areas in the UK in 2026",
+    "subtitle": "Source: GWIS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {"type": "line", "color": "red"},
+  "encoding": {
+    "x": {"field": "Day", "type": "temporal"},
+    "y": {"field": "Hectares", "type": "quantitative"}
+  },
+  "config": {}
+}
