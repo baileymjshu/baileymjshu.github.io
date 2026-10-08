@@ -59,8 +59,10 @@
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     
 <section>
+    <h1>CC1. Hosting</h1> <!-- New main heading for this section only -->
+
         <div class="chart-description">
-            <h2>Section 1: Declining Populations</h2>
+            <h3>Chart 1: Declining Populations</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 This chart estimates the population decline for seven countries over the next century.
             </p>
@@ -69,11 +71,8 @@
         <!-- This element will contain our vega-lite chart -->
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
-    </section>
-
-<section>
         <div class="chart-description">
-            <h2>Section 2: Comparing Four Ecnomies</h2>
+            <h3>Chart 2: Comparing Four Ecnomies</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 This comparison chart compares the growth of four economies from 1980 to 2025.
             </p>
@@ -81,6 +80,19 @@
 
         <!-- This element will contain our vega-lite chart -->
         <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+    </section>
+
+<section>
+    <h1> CC2 Building</h1>
+        <div class="chart-description">
+            <h3>Chart 3: Rural Income in the United States</h3>
+            <p>
+                The chart below describes pre-tax income in the rural United States.
+            </p>
+        </div>
+
+        <figure id="Location3"></figure>
 
     </section>
 
@@ -101,6 +113,10 @@
         let chart2 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine10.json";
 
         vegaEmbed('#Location2', chart2)
+
+        let chart3 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ruralvisualization.vl.json"
+
+        vegaEmbed('#Location3', chart3)
 
     </script>
 
