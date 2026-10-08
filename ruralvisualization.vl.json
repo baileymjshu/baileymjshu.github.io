@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ruralincome.csv"
+  },
+  "title": {"text": "Income Before Taxes in the Rural United States"},
+  "width": 300,
+  "height": 300,
+  "mark": {"type": "line", "color": "blue"},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative"}
+  },
+  "config": {}
+}
