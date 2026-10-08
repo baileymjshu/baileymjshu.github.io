@@ -3,7 +3,12 @@
   "data": {
     "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ruralincome.csv"
   },
-  "title": {"text": "Income Before Taxes in the Rural United States"},
+  "title": {
+    "text": "Income Before Taxes in the Rural United States",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10
+  },
   "width": 300,
   "height": 300,
   "mark": {"type": "line", "color": "blue"},
