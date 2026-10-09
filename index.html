@@ -25,8 +25,10 @@
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
     <!-- Try swapping to example3.css or another, and take a look at each example.css to see if you understand it-->
     <link rel="stylesheet" type="text/css" href="Example3.css">
-    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+    <title>Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
+    <link rel="icon" type="image/png" href="favicon.png">
+    
     <!-- This is a link to the vega-lite packages which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
@@ -55,12 +57,15 @@
     </p>
     </div>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This is my portfolio for PP434 Automated Data Visualisation for Policymaking. It is compiled of class challenges given over the term.
+        This is my portfolio for PP434 Automated Data Visualisation for Policymaking. It is compiled of ten class challenges given over the term.
     </h3>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     
 <section>
+    <section class="challenge">
+  <div class="challenge__num" aria-hidden="true">01</div>
+  <div class="challenge__body">
     <h1>CC1. Hosting</h1> <!-- New main heading for this section only -->
 
         <div class="chart-description">
@@ -83,18 +88,49 @@
         <!-- This element will contain our vega-lite chart -->
         <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
+        <div class="chart-description">
+            <h3>Chart 3: Food - CO2 greenhouse gas emissions</h3>
+            <p>A third chart estimating greenhouse gas emissions produced by variouis food sources.
+
+            </p>
+        </div>
+
+        <figure id="Location3"></figure>
+
     </section>
 
 <section>
+    <section class="challenge">
+  <div class="challenge__num" aria-hidden="true">02</div>
+  <div class="challenge__body">
     <h1> CC2. Building</h1>
         <div class="chart-description">
-            <h3>Chart 3: Rural Income in the United States</h3>
+            <h3>Chart 4: Rural Income in the United States</h3>
             <p>
                 The chart below describes pre-tax income in the rural United States.
             </p>
         </div>
 
-        <figure id="Location3"></figure>
+        <figure id="Location4"></figure>
+
+         <div class="chart-description">
+            <h3>Chart 5: Weekly Burnt Areas in the UK in 2026</h3>
+            <p> 
+                Summer 2026 in the UK had a significant amount of wildfires. The chart below illustrates the amount of land burned every month through September in 2026.
+            </p>
+        </div>
+
+        <figure id="Location5"></figure>
+
+        <div class="chart-description">
+            <h3>Chart 6: Average Rent Change Percentage in Islington</h3>
+            <p>
+                The bourough of Islington is in London. The chart tracks average rent change percentage from 2016 to 2026.
+            </p>
+        </div>
+        
+        <figure id="Location6"></figure>
+
 
     </section>
 
@@ -116,9 +152,20 @@
 
         vegaEmbed('#Location2', chart2)
 
-        let chart3 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ruralvisualization.vl.json"
-
+        let chart3 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartBar4.json"
         vegaEmbed('#Location3', chart3)
+
+        let chart4 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ruralvisualization.vl.json"
+
+        vegaEmbed('#Location4', chart4)
+
+        let chart5 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ukburnvisualization.vl.json"
+
+        vegaEmbed('#Location5', chart5)
+
+        let chart6 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/islingtonrentchange.vl.json"
+
+        vegaEmbed('#Location6', chart6)
 
     </script>
 
