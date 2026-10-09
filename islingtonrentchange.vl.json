@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/Islington_chart-timeseries.csv"
+  },
+  "title": {
+    "text": "Average Rent Change Percentage in Islington",
+    "subtitle": "Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10
+  },
+  "width": 300,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "black", "strokeWidth": 0.75},
+      "encoding": {"y": {"datum": 0}}
+    },
+    {
+      "mark": {"type": "line", "color": "darkgreen"},
+      "encoding": {
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {
+          "field": "Percentage Rent Change",
+          "type": "quantitative",
+          "scale": {"domainMin": -15}
+        }
+      }
+    }
+  ],
+  "config": {}
+}
