@@ -49,7 +49,7 @@ event_id,date,year,county,claim_status,compensation_usd,animal_count,animal_type
 47,2025-10-05,2025,Montrose,Claim Received,3500.0,1,cow,Cattle,False,1 cow
 48,2025-09-30,2025,Eagle,Claim Received,954.0,2,ewe,Sheep,False,2 ewes
 48,2025-09-30,2025,Eagle,Claim Received,,1,lamb,Sheep,False,1 lamb
-49,2025-09-04,2025,Jackson,No Claim Submitted,954.0,1,calf,Cattle,True,1 yearling calf
+49,2025-09-04,2025,Jackson,No Claim Submitted,,1,calf,Cattle,True,1 yearling calf
 50,2025-08-29,2025,Jackson,Claim Received,2489.93,2,calf,Cattle,True,2 yearling calves
 51,2025-08-21,2025,Jackson,Claim Received,2489.93,1,calf,Cattle,True,1 yearling calf
 52,2025-08-16,2025,Rio Blanco,Claim Received,970.32,3,lamb,Sheep,False,3 lambs
@@ -58,36 +58,36 @@ event_id,date,year,county,claim_status,compensation_usd,animal_count,animal_type
 55,2025-08-02,2025,Rio Blanco,Claim Received,485.16,1,ewe,Sheep,False,1 ewe
 56,2025-07-22,2025,Rio Blanco,Claim Received,323.44,1,lamb,Sheep,False,1 lamb
 57,2025-07-20,2025,Rio Blanco,Claim Received,323.44,1,lamb,Sheep,False,1 lamb
-58,2025-07-18,2025,Pitkin,Claim Received,323.44,1,calf,Cattle,False,1 calf
+58,2025-07-18,2025,Pitkin,Claim Received,,1,calf,Cattle,False,1 calf
 59,2025-07-14,2025,Grand,Claim Received,3500.0,1,cow,Cattle,False,1 cow
-60,2025-05-25,2025,Pitkin,Claim Received,3500.0,1,cow,Cattle,False,1 cow
+60,2025-05-25,2025,Pitkin,Claim Received,,1,cow,Cattle,False,1 cow
 60,2025-05-25,2025,Pitkin,Claim Received,,1,calf,Cattle,False,1 calf
-61,2025-05-24,2025,Pitkin,Claim Received,3500.0,1,calf,Cattle,False,1 calf
+61,2025-05-24,2025,Pitkin,Claim Received,,1,calf,Cattle,False,1 calf
 62,2025-05-23,2025,Pitkin,Claim Received,3046.0,1,calf,Cattle,False,1 calf
-63,2025-05-17,2025,Pitkin,Claim Received,3046.0,1,calf,Cattle,False,1 calf
+63,2025-05-17,2025,Pitkin,Claim Received,,1,calf,Cattle,False,1 calf
 64,2025-05-06,2025,Gunnison,Claim Received,2300.0,1,calf,Cattle,False,1 calf
 65,2025-04-19,2025,Routt,Claim Received,2250.0,1,calf,Cattle,False,1 calf
 66,2025-03-29,2025,Eagle,Claim Received,1681.33,1,calf,Cattle,False,1 calf
-67,2025-03-13,2025,Pitkin,Claim Received,1681.33,1,heifer,Cattle,True,1 yearling heifer
+67,2025-03-13,2025,Pitkin,Claim Received,,1,heifer,Cattle,True,1 yearling heifer
 68,2025-03-09,2025,Jackson,Claim Received,88.5,1,dog,Dog,False,1 dog
 69,2025-02-05,2025,Jackson,Claim Received,2097.66,1,cow,Cattle,False,1 cow
 70,2024-09-20,2024,Routt,Claim Received,2118.19,1,calf,Cattle,False,1 calf
-71,2024-09-09,2024,Grand,Claim Received,2118.19,1,cow,Cattle,False,1 cow
+71,2024-09-09,2024,Grand,Claim Received,,1,cow,Cattle,False,1 cow
 71,2024-09-09,2024,Grand,Claim Received,,1,calf,Cattle,False,1 calf
-72,2024-07-28,2024,Grand,Claim Received,2118.19,8,sheep,Sheep,False,8 sheep
+72,2024-07-28,2024,Grand,Claim Received,,8,sheep,Sheep,False,8 sheep
 73,2024-07-19,2024,Routt,Claim Received,1798.59,1,calf,Cattle,False,1 calf
-74,2024-07-17,2024,Grand,Claim Received,1798.59,1,sheep,Sheep,False,1 sheep
-75,2024-07-10,2024,Routt,Claim Received,1798.59,1,calf,Cattle,False,1 calf
+74,2024-07-17,2024,Grand,Claim Received,,1,sheep,Sheep,False,1 sheep
+75,2024-07-10,2024,Routt,Claim Received,,1,calf,Cattle,False,1 calf
 76,2024-07-07,2024,Routt,Claim Received,1141.17,1,calf,Cattle,False,1 calf
-77,2024-06-16,2024,Routt,Claim Received,1141.17,1,calf,Cattle,False,1 calf
+77,2024-06-16,2024,Routt,Claim Received,,1,calf,Cattle,False,1 calf
 78,2024-06-09,2024,Jackson,Claim Received,1636.07,1,calf,Cattle,False,1 calf
 79,2024-05-25,2024,Jackson,Claim Received,2542.05,1,calf,Cattle,False,1 calf
-80,2024-05-11,2024,Grand,Claim Received,2542.05,1,cattle,Cattle,False,1 cattle
+80,2024-05-11,2024,Grand,Claim Received,,1,cattle,Cattle,False,1 cattle
 81,2024-05-02,2024,Jackson,Claim Received,1171.59,1,cow,Cattle,False,1 cow
-82,2024-04-28,2024,Grand,Claim Received,1171.59,1,calf,Cattle,False,1 calf
-83,2024-04-18,2024,Grand,Claim Received,1171.59,1,cattle,Cattle,False,1 cattle
-84,2024-04-17,2024,Grand,Claim Received,1171.59,3,cattle,Cattle,False,3 cattle
-85,2024-04-13,2024,Jackson,No Claim Submitted,1171.59,1,calf,Cattle,False,1 calf
+82,2024-04-28,2024,Grand,Claim Received,,1,calf,Cattle,False,1 calf
+83,2024-04-18,2024,Grand,Claim Received,,1,cattle,Cattle,False,1 cattle
+84,2024-04-17,2024,Grand,Claim Received,,3,cattle,Cattle,False,3 cattle
+85,2024-04-13,2024,Jackson,No Claim Submitted,,1,calf,Cattle,False,1 calf
 86,2024-04-07,2024,Jackson,Claim Received,1514.0,1,calf,Cattle,False,1 calf
 87,2024-04-02,2024,Grand,Claim Received,1784.84,1,calf,Cattle,False,1 calf
 88,2024-03-15,2024,Elbert,Claim Received,1200.0,1,llama,Llama,False,1 llama
