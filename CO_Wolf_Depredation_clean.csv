@@ -1,0 +1,106 @@
+event_id,date,year,county,claim_status,compensation_usd,animal_count,animal_type,animal_group,yearling,animal_original
+1,2026-10-07,2026,Pitkin,No Claim Submitted,,5,calf,Cattle,False,5 Calves
+2,2026-10-06,2026,Grand,No Claim Submitted,,1,bull,Cattle,False,1 Bull
+3,2026-09-29,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+4,2026-09-22,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+5,2026-09-18,2026,Jackson,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+6,2026-09-09,2026,Pitkin,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+7,2026-09-06,2026,Rio Blanco,No Claim Submitted,,7,lamb,Sheep,False,7 Lambs
+8,2026-09-04,2026,Pitkin,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+9,2026-09-04,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+10,2026-09-02,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+11,2026-08-31,2026,Rio Blanco,No Claim Submitted,,3,lamb,Sheep,False,3 Lambs
+11,2026-08-31,2026,Rio Blanco,No Claim Submitted,,1,ewe,Sheep,False,1 Ewe
+12,2026-08-30,2026,Jackson,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+13,2026-08-29,2026,Rio Blanco,No Claim Submitted,,1,ewe,Sheep,False,1 Ewe
+14,2026-08-28,2026,Pitkin,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+15,2026-08-26,2026,Jackson,No Claim Submitted,,1,steer,Cattle,True,1 Yearling Steer
+16,2026-08-21,2026,Rio Blanco,No Claim Submitted,,3,lamb,Sheep,False,3 Lamb
+17,2026-08-15,2026,Jackson,No Claim Submitted,,1,steer,Cattle,True,1 Yearling Steer
+18,2026-08-14,2026,Pitkin,No Claim Submitted,,1,bull,Cattle,False,1 Bull
+19,2026-08-13,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+20,2026-08-06,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+21,2026-08-01,2026,Eagle,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+22,2026-08-01,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+23,2026-07-31,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+24,2026-07-29,2026,Pitkin,No Claim Submitted,,1,cow,Cattle,False,1 Cow
+25,2026-07-27,2026,Rio Blanco,No Claim Submitted,,5,ewe,Sheep,False,5 Ewe
+26,2026-07-27,2026,Moffat,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+27,2026-07-27,2026,Eagle,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+28,2026-07-26,2026,Grand,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+29,2026-07-21,2026,Moffat,No Claim Submitted,,1,cow,Cattle,False,1 Cow
+30,2026-07-16,2026,Eagle,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+31,2026-07-03,2026,Routt,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+32,2026-06-29,2026,Jackson,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+33,2026-06-11,2026,Routt,No Claim Submitted,,1,lamb,Sheep,False,1 Lamb
+34,2026-06-10,2026,Routt,No Claim Submitted,,1,lamb,Sheep,False,1 Lamb
+35,2026-04-23,2026,Pitkin,No Claim Submitted,,1,calf,Cattle,False,1 Calf
+36,2026-02-20,2026,Pitkin,No Claim Submitted,,1,cow,Cattle,False,1 Cow
+37,2026-02-07,2026,Jackson,No Claim Submitted,,1,dog,Dog,False,1 dog
+38,2026-01-24,2026,Rio Blanco,No Claim Submitted,,11,sheep,Sheep,False,11 sheep
+39,2025-11-22,2025,Gunnison,Claim Received,2618.24,1,heifer,Cattle,False,1 Heifer
+40,2025-11-07,2025,Pitkin,Claim Received,2219.6,1,calf,Cattle,False,1 calf
+41,2025-11-04,2025,Rio Blanco,Claim Received,485.16,1,ewe,Sheep,False,1 ewe
+42,2025-11-04,2025,Routt,Claim Received,2899.84,1,calf,Cattle,False,1 calf
+43,2025-10-29,2025,Routt,Claim Received,2899.84,1,calf,Cattle,False,1 calf
+44,2025-10-12,2025,Rio Blanco,Claim Received,485.16,1,ewe,Sheep,False,1 ewe
+45,2025-10-12,2025,Routt,Claim Received,2899.84,1,calf,Cattle,False,1 calf
+46,2025-10-09,2025,Rio Blanco,Claim Received,485.16,1,ewe,Sheep,False,1 ewe
+47,2025-10-05,2025,Montrose,Claim Received,3500.0,1,cow,Cattle,False,1 cow
+48,2025-09-30,2025,Eagle,Claim Received,954.0,2,ewe,Sheep,False,2 ewes
+48,2025-09-30,2025,Eagle,Claim Received,,1,lamb,Sheep,False,1 lamb
+49,2025-09-04,2025,Jackson,No Claim Submitted,954.0,1,calf,Cattle,True,1 yearling calf
+50,2025-08-29,2025,Jackson,Claim Received,2489.93,2,calf,Cattle,True,2 yearling calves
+51,2025-08-21,2025,Jackson,Claim Received,2489.93,1,calf,Cattle,True,1 yearling calf
+52,2025-08-16,2025,Rio Blanco,Claim Received,970.32,3,lamb,Sheep,False,3 lambs
+53,2025-08-12,2025,Pitkin,Claim Received,2775.0,1,cow,Cattle,False,1 cow
+54,2025-08-07,2025,Pitkin,Claim Received,2875.0,1,cow,Cattle,False,1 cow
+55,2025-08-02,2025,Rio Blanco,Claim Received,485.16,1,ewe,Sheep,False,1 ewe
+56,2025-07-22,2025,Rio Blanco,Claim Received,323.44,1,lamb,Sheep,False,1 lamb
+57,2025-07-20,2025,Rio Blanco,Claim Received,323.44,1,lamb,Sheep,False,1 lamb
+58,2025-07-18,2025,Pitkin,Claim Received,323.44,1,calf,Cattle,False,1 calf
+59,2025-07-14,2025,Grand,Claim Received,3500.0,1,cow,Cattle,False,1 cow
+60,2025-05-25,2025,Pitkin,Claim Received,3500.0,1,cow,Cattle,False,1 cow
+60,2025-05-25,2025,Pitkin,Claim Received,,1,calf,Cattle,False,1 calf
+61,2025-05-24,2025,Pitkin,Claim Received,3500.0,1,calf,Cattle,False,1 calf
+62,2025-05-23,2025,Pitkin,Claim Received,3046.0,1,calf,Cattle,False,1 calf
+63,2025-05-17,2025,Pitkin,Claim Received,3046.0,1,calf,Cattle,False,1 calf
+64,2025-05-06,2025,Gunnison,Claim Received,2300.0,1,calf,Cattle,False,1 calf
+65,2025-04-19,2025,Routt,Claim Received,2250.0,1,calf,Cattle,False,1 calf
+66,2025-03-29,2025,Eagle,Claim Received,1681.33,1,calf,Cattle,False,1 calf
+67,2025-03-13,2025,Pitkin,Claim Received,1681.33,1,heifer,Cattle,True,1 yearling heifer
+68,2025-03-09,2025,Jackson,Claim Received,88.5,1,dog,Dog,False,1 dog
+69,2025-02-05,2025,Jackson,Claim Received,2097.66,1,cow,Cattle,False,1 cow
+70,2024-09-20,2024,Routt,Claim Received,2118.19,1,calf,Cattle,False,1 calf
+71,2024-09-09,2024,Grand,Claim Received,2118.19,1,cow,Cattle,False,1 cow
+71,2024-09-09,2024,Grand,Claim Received,,1,calf,Cattle,False,1 calf
+72,2024-07-28,2024,Grand,Claim Received,2118.19,8,sheep,Sheep,False,8 sheep
+73,2024-07-19,2024,Routt,Claim Received,1798.59,1,calf,Cattle,False,1 calf
+74,2024-07-17,2024,Grand,Claim Received,1798.59,1,sheep,Sheep,False,1 sheep
+75,2024-07-10,2024,Routt,Claim Received,1798.59,1,calf,Cattle,False,1 calf
+76,2024-07-07,2024,Routt,Claim Received,1141.17,1,calf,Cattle,False,1 calf
+77,2024-06-16,2024,Routt,Claim Received,1141.17,1,calf,Cattle,False,1 calf
+78,2024-06-09,2024,Jackson,Claim Received,1636.07,1,calf,Cattle,False,1 calf
+79,2024-05-25,2024,Jackson,Claim Received,2542.05,1,calf,Cattle,False,1 calf
+80,2024-05-11,2024,Grand,Claim Received,2542.05,1,cattle,Cattle,False,1 cattle
+81,2024-05-02,2024,Jackson,Claim Received,1171.59,1,cow,Cattle,False,1 cow
+82,2024-04-28,2024,Grand,Claim Received,1171.59,1,calf,Cattle,False,1 calf
+83,2024-04-18,2024,Grand,Claim Received,1171.59,1,cattle,Cattle,False,1 cattle
+84,2024-04-17,2024,Grand,Claim Received,1171.59,3,cattle,Cattle,False,3 cattle
+85,2024-04-13,2024,Jackson,No Claim Submitted,1171.59,1,calf,Cattle,False,1 calf
+86,2024-04-07,2024,Jackson,Claim Received,1514.0,1,calf,Cattle,False,1 calf
+87,2024-04-02,2024,Grand,Claim Received,1784.84,1,calf,Cattle,False,1 calf
+88,2024-03-15,2024,Elbert,Claim Received,1200.0,1,llama,Llama,False,1 llama
+89,2023-11-17,2023,Jackson,Claim Received,489.0,3,sheep,Sheep,False,3 sheep
+90,2023-03-13,2023,Jackson,Claim Received,15000.0,1,dog,Dog,False,1 dog
+91,2022-11-19,2022,Jackson,Claim Received,1106.09,1,cattle,Cattle,False,1 cattle
+92,2022-10-08,2022,Jackson,Claim Received,338.62,1,calf,Cattle,False,1 calf
+93,2022-10-07,2022,Jackson,Claim Received,400.0,1,calf,Cattle,False,1 calf
+94,2022-08-01,2022,Jackson,Claim Received,3000.0,1,calf,Cattle,False,1 calf
+95,2022-05-30,2022,Jackson,Claim Received,3000.0,1,calf,Cattle,False,1 calf
+96,2022-05-02,2022,Jackson,Claim Received,2850.0,1,calf,Cattle,False,1 calf
+97,2022-04-22,2022,Jackson,Claim Received,779.52,1,calf,Cattle,False,1 calf
+98,2022-03-15,2022,Jackson,Claim Received,1230.0,2,cattle,Cattle,False,2 cattle
+99,2022-01-18,2022,Jackson,Claim Received,8647.0,3,cattle,Cattle,False,3 cattle
+100,2022-01-09,2022,Jackson,Claim Received,1252.72,2,dog,Dog,False,2 dogs
+101,2021-12-19,2021,Jackson,Claim Received,1800.0,1,calf,Cattle,False,1 calf
