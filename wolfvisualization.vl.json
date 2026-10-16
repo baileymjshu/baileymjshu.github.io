@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/CO_Wolf_Depredation_clean.csv"
+  },
+  "title": {
+    "text": "Colorado Wolf Depredations by Animal Type and Compensation Claim 2021 - 2026",
+    "subtitle": "Source: Colorado Parks and Wildlife",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "transform": [
+    {
+      "calculate": "datum.claim_status === 'Claim Received' ? 1 : 0",
+      "as": "has_claim"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "animal_count", "as": "animals"},
+        {"op": "sum", "field": "compensation_usd", "as": "comp"},
+        {"op": "max", "field": "has_claim", "as": "any_claim"}
+      ],
+      "groupby": ["year", "animal_group"]
+    },
+    {
+      "calculate": "datum.any_claim === 0 ? 'No claims' : (datum.comp > 0 ? format(datum.comp, '$,.2f') : 'Claim filed, amount not listed')",
+      "as": "comp_label"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal", "title": "Year"},
+    "y": {
+      "field": "animals",
+      "type": "quantitative",
+      "title": "Animals killed"
+    },
+    "color": {
+      "field": "animal_group",
+      "type": "nominal",
+      "title": "Animal",
+      "scale": {
+        "domain": ["Cattle", "Dog", "Llama", "Sheep"],
+        "range": ["#0072B2", "#E69F00", "#D55E00", "#009E73"]
+      }
+    },
+    "tooltip": [
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "animal_group", "type": "nominal", "title": "Animal"},
+      {"field": "animals", "type": "quantitative", "title": "Animals Killed"},
+      {"field": "comp_label", "type": "nominal", "title": "Compensation"}
+    ]
+  },
+  "config": {}
+}
