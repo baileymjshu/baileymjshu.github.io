@@ -138,21 +138,29 @@
     <div class="challenge__num" aria-hidden="true">03</div>
     <div class="challenge__body">
     <h1>CC3. Policy Debate</h1>
+        
         <div class="chart-description">
-            <h3>Chart 7: Colorado Wolf Depredations</h3>
+            <h3>Chart 7: Colorado Wolf Depredations by Livestock</h3>
             <p>
-                In 2020, Coloradoans voted to reintroduce gray wolves into the state. However, the reintroduction has been marred with controversy, including a confusing compensation mechanism for ranchers whose livestock are killed.
+                Coloradoans voted for wolves in 2020, but unless the compensation fund grows with livestock losses, reintroduction should be paused for reevaluation.
             </p>
         </div>
         
-        <figure id="Location7">
-        </figure>
-        <p>
-                Reported livestock losses rose from 29 animals in 2024 to 67 so far in 2026, so unless the depredation compensation fund can grow, the program should be paused for a reevaluation.
-        </p>
-    </div>
-
-    </section class="challenge">
+        <figure id="Location7"></figure>
+            <p>
+                Livestock losses rose from 29 animals in 2024 to 67 so far in 2026, so compensation funding must grow or reintroduction should pause.
+            </p>    
+    
+        <div class="chart-description">
+            <h3>Chart 8: Colorado Depredation Compensation Budget</h3>
+        </div>
+    
+        <figure id="Location8"></figure>
+            <p>
+                CPW paid or approved about $753,000 for 2025–26 wolf losses, more than double the $350,000 fund. Without more funding, reintroduction cannot fairly continue.
+            </p>
+        </div>
+    </section>
  </section>
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
@@ -191,6 +199,10 @@
         let chart7 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wolfvisualization.vl.json"
 
         vegaEmbed('#Location7', chart7)
+
+        let chart8 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wolfbudgetvisualization.vl.json"
+
+        vegaEmbed('#Location8', chart8)
 
     </script>
 
