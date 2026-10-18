@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Wolf compensation paid vs. Colorado's compensation fund",
+    "subtitle": [
+      "Source: Colorado General Assembly and CPW Gray Wolf Annual Report"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/CO_Wolf_Compensation_Budget.csv"
+  },
+  "width": 250,
+  "height": 300,
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Biological Year (April–March)",
+          "axis": {"labelAngle": 0}
+        },
+        "xOffset": {"field": "measure"},
+        "y": {
+          "field": "amount_usd",
+          "type": "quantitative",
+          "title": "US Dollars",
+          "axis": {"format": "$,.0f"}
+        },
+        "color": {
+          "field": "measure",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": ["Annual compensation fund", "Compensation paid by CPW"],
+            "range": ["#A3B18A", "#BC4749"]
+          }
+        },
+        "tooltip": [
+          {"field": "year", "type": "ordinal", "title": "Biological year"},
+          {"field": "measure", "type": "nominal", "title": "Measure"},
+          {
+            "field": "amount_usd",
+            "type": "quantitative",
+            "title": "Amount",
+            "format": "$,.0f"
+          },
+          {"field": "source", "type": "nominal", "title": "Source"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
