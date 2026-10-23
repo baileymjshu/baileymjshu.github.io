@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "US Legislation Affecting Protest Rights: By Year",
+    "anchor": "start",
+    "color": "#8b2a22",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "offset": 20
+  },
+  "width": 640,
+  "height": {"step": 56},
+  "data": {
+    "values": [
+      {"year": "2017", "Defeated": 43, "Pending": 0, "Enacted": 9},
+      {"year": "2018", "Defeated": 13, "Pending": 0, "Enacted": 4},
+      {"year": "2019", "Defeated": 32, "Pending": 0, "Enacted": 9},
+      {"year": "2020", "Defeated": 24, "Pending": 0, "Enacted": 7},
+      {"year": "2021", "Defeated": 80, "Pending": 0, "Enacted": 12},
+      {"year": "2022", "Defeated": 12, "Pending": 0, "Enacted": 2},
+      {"year": "2023", "Defeated": 21, "Pending": 0, "Enacted": 4},
+      {"year": "2024", "Defeated": 45, "Pending": 0, "Enacted": 7},
+      {"year": "2025", "Defeated": 33, "Pending": 25, "Enacted": 7}
+    ]
+  },
+  "transform": [
+    {"fold": ["Defeated", "Pending", "Enacted"], "as": ["status", "count"]},
+    {"filter": "datum.count > 0"},
+    {
+      "calculate": "indexof(['Defeated','Pending','Enacted'], datum.status)",
+      "as": "rank"
+    },
+    {
+      "window": [{"op": "sum", "field": "count", "as": "end"}],
+      "groupby": ["year"],
+      "sort": [{"field": "rank"}],
+      "frame": [null, 0]
+    },
+    {"calculate": "datum.end - datum.count", "as": "start"},
+    {"calculate": "datum.start + datum.count / 2", "as": "mid"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "scale": {"paddingInner": 0.3},
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 22,
+        "labelFontWeight": "bold",
+        "labelColor": "#111",
+        "labelPadding": 14
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [{"aggregate": [], "groupby": ["year"]}],
+      "mark": {"type": "bar", "color": "#f0f0f0"},
+      "encoding": {
+        "x": {
+          "datum": 0,
+          "type": "quantitative",
+          "scale": {"domain": [0, 105]},
+          "axis": null
+        },
+        "x2": {"datum": 105}
+      }
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "start", "type": "quantitative"},
+        "x2": {"field": "end"},
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Defeated", "Enacted", "Pending"],
+            "range": ["#5f7775", "#862820", "#f5c842"]
+          },
+          "legend": {
+            "title": "Bill status",
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 500,
+            "symbolStrokeWidth": 0,
+            "labelFontSize": 16,
+            "titleFontSize": 15,
+            "columnPadding": 24,
+            "offset": 24
+          }
+        }
+      }
+    },
+    {
+      "transform": [{"filter": "datum.count >= 3"}],
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "fontSize": 22,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {"field": "mid", "type": "quantitative"},
+        "text": {"field": "count"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "total"}],
+          "groupby": ["year"]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -7,
+        "fontSize": 24,
+        "fontWeight": 900,
+        "color": "#111"
+      },
+      "encoding": {
+        "x": {"datum": 104, "type": "quantitative"},
+        "text": {"field": "total"}
+      }
+    },
+    {
+      "transform": [{"aggregate": [], "groupby": ["year"]}],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": 14,
+        "fontSize": 14,
+        "color": "#111",
+        "text": "Total"
+      },
+      "encoding": {"x": {"datum": 104, "type": "quantitative"}}
+    }
+  ],
+  "config": {
+    "font": "Lato, Helvetica, Arial, sans-serif",
+    "view": {"stroke": null}
+  }
+}
