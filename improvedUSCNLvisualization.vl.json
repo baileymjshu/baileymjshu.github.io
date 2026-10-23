@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US Legislation Affecting Protest Rights: By Year",
+    "subtitle": [
+      "Anti-protest bills introduced in state and federal legislatures each year."
+    ],
+    "anchor": "start",
+    "color": "#8b2a22",
+    "fontSize": 19,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#444",
+    "subtitlePadding": 6,
+    "offset": 14
+  },
+  "width": "container",
+  "height": {"step": 60},
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "values": [
+      {
+        "year": "2017",
+        "Enacted": 9,
+        "Pending": 0,
+        "Defeated": 43,
+        "note": "After the Standing Rock pipeline protests"
+      },
+      {"year": "2018", "Enacted": 4, "Pending": 0, "Defeated": 13},
+      {"year": "2019", "Enacted": 9, "Pending": 0, "Defeated": 32},
+      {"year": "2020", "Enacted": 7, "Pending": 0, "Defeated": 24},
+      {
+        "year": "2021",
+        "Enacted": 12,
+        "Pending": 0,
+        "Defeated": 80,
+        "note": "After the 2020 racial justice protests"
+      },
+      {"year": "2022", "Enacted": 2, "Pending": 0, "Defeated": 12},
+      {"year": "2023", "Enacted": 4, "Pending": 0, "Defeated": 21},
+      {
+        "year": "2024",
+        "Enacted": 7,
+        "Pending": 0,
+        "Defeated": 45,
+        "note": "Amid campus protests over the war in Gaza"
+      },
+      {
+        "year": "2025",
+        "Enacted": 7,
+        "Pending": 25,
+        "Defeated": 33,
+        "note": "Pending bills may still be enacted"
+      }
+    ]
+  },
+  "transform": [
+    {"fold": ["Enacted", "Pending", "Defeated"], "as": ["status", "count"]},
+    {"filter": "datum.count > 0"},
+    {
+      "calculate": "indexof(['Enacted','Pending','Defeated'], datum.status)",
+      "as": "rank"
+    },
+    {
+      "window": [{"op": "sum", "field": "count", "as": "end"}],
+      "groupby": ["year"],
+      "sort": [{"field": "rank"}],
+      "frame": [null, 0]
+    },
+    {"calculate": "datum.end - datum.count", "as": "start"},
+    {"calculate": "datum.start + datum.count / 2", "as": "mid"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "scale": {"paddingInner": 0.35},
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 18,
+        "labelFontWeight": "bold",
+        "labelColor": "#111",
+        "labelPadding": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "start",
+          "type": "quantitative",
+          "scale": {"domain": [0, 100]},
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "domain": false,
+            "grid": false,
+            "title": "Source: USCNL US Protest Law Tracker, October 2026 update.",
+            "titleAnchor": "start",
+            "titleAlign": "left",
+            "titleFontSize": 11,
+            "titleFontWeight": "normal",
+            "titleColor": "#555",
+            "titlePadding": 24
+          }
+        },
+        "x2": {"field": "end"},
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Enacted", "Pending", "Defeated"],
+            "range": ["#862820", "#f5c842", "#5f7775"]
+          },
+          "legend": {
+            "title": "Bill status",
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 260,
+            "symbolStrokeWidth": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 11,
+            "columnPadding": 16,
+            "offset": 12
+          }
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year"},
+          {"field": "status", "title": "Status"},
+          {"field": "count", "type": "quantitative", "title": "Bills"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "fontWeight": 600},
+      "encoding": {
+        "x": {"field": "mid", "type": "quantitative"},
+        "text": {"field": "count"},
+        "size": {
+          "condition": {"test": "datum.count < 3", "value": 11},
+          "value": 17
+        },
+        "color": {
+          "condition": {"test": "datum.status === 'Pending'", "value": "#333"},
+          "value": "white"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "total"}],
+          "groupby": ["year"]
+        },
+        {
+          "calculate": "datum.year === '2017' ? datum.total + ' total' : datum.total",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 17,
+        "fontWeight": 900,
+        "color": "#111"
+      },
+      "encoding": {
+        "x": {"field": "total", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.status === 'Enacted' && datum.note"}],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dy": 31,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#555"
+      },
+      "encoding": {
+        "x": {"datum": 0, "type": "quantitative"},
+        "text": {"field": "note"}
+      }
+    }
+  ],
+  "config": {
+    "font": "Lato, Helvetica, Arial, sans-serif",
+    "view": {"stroke": null}
+  }
+}
