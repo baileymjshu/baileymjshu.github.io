@@ -1,29 +1,9 @@
 <!DOCTYPE html>
-<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
-<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
-
-<!-- Take a look around and make your own copy to adapt for your own use. -->
-
-<!-- This is a comment -->
-<!-- Comments are not displayed in the browser -->
-<!-- They can be used to leave notes in the code -->
 
 <html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
-    Each tag does something different. For example:
-        - The <html> tag defines the whole document.
-        - The <h1> tag defines a large heading
-        - The <p> tag defines a paragraph
-        - Tags appear as an opening <div> and closing </div> pair
-    -->
 
 <head>    
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
-
-    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping to example3.css or another, and take a look at each example.css to see if you understand it-->
+    
     <link rel="stylesheet" type="text/css" href="Example3.css">
     <title>Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
@@ -44,13 +24,12 @@
 </head>
 
 <body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
     <div style="text-align: center;">
     <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
         PP434 Portfolio
     </h1>
-    <p style="margin-top: 0px; color: darkblue">
+    <p style="margin-top: 0px; color: #0F0F75">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
         Bailey Shuster | <a href="https://www.linkedin.com/in/baileyshuster/?isSelfProfile=true">LinkedIn</a> | <a
             href="https://github.com/baileymjshu">GitHub</a>
@@ -59,8 +38,6 @@
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
         This is my portfolio for PP434 Automated Data Visualisation for Policymaking. It is compiled of ten class challenges given over the term.
     </h3>
-
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     
 <section>
     <section class="challenge">
@@ -90,8 +67,8 @@
 
         <div class="chart-description">
             <h3>Chart 3: Food - CO2 greenhouse gas emissions</h3>
-            <p>A third chart estimating greenhouse gas emissions produced by various food sources.
-
+            <p>
+                A third chart estimating greenhouse gas emissions produced by various food sources.
             </p>
         </div>
 
@@ -133,7 +110,7 @@
     </section class="challenge">
  </section>
 
- <section>
+<section>
     <section class="challenge">
     <div class="challenge__num" aria-hidden="true">03</div>
     <div class="challenge__body">
@@ -163,15 +140,42 @@
     </section>
  </section>
 
+<section>
+    <section class="challenge">
+    <div class="challenge__num" aria-hidden="true">04</div>
+    <div class="challenge__body">
+    <h1>CC4. Replication</h1>
+
+        <div class="chart-description">
+            <h3>Chart 9: US Legislation Affecting Protest Rights</h3>
+            <p>
+             This chart is located on a webpage by the U.S. Center for Not-for-Profit Law (USCNL) titled "Analysis of US Anti-Protest Bills". The data comes from their US Protest Law Tracker.   
+            </p>
+            <img src="UCNL_protest.png" width="500">
+        </div>
+
+        <div class="chart-description">
+            <h3>My Replication of "US Legislation Affecting Protest Rights" Chart</h3>
+            <p>
+                Here is my replication and improvement of the above chart.
+            </p>
+        </div>
+        <figure id="Location9"></figure>    
+
+        <div class="chart-description">
+            <h3>My Improved Version of "US Legislation Affecting Protest Rights" Chart</h3>
+            <p>
+                This chart improves the U.S. Center for Not-for-Profit Law's "US Legislation Affecting Protest Rights: By Year" graphic. Each bar now starts with the enacted bills and each year's total appears at the end of the bars. hort notes mark the protest movements that came before the biggest spikes. Hover over any segment to see its exact count.
+            </p>
+        </div>
+        <figure id="Location10"></figure>
+        
+    </div>
+    </section>
+    </section>
+
     <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-        
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_2_spec, adding VegaEmbed for Location2, and adding a new section in the HTML
-        // e.g. 
-        // let figure_2_spec = ...
-        // vegaEmbed('#Location2', figure_2_spec)
 
         let chart1 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine3.json"; 
 
@@ -203,6 +207,14 @@
         let chart8 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wolfbudgetvisualization.vl.json"
 
         vegaEmbed('#Location8', chart8)
+
+        let chart9 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/USCNLvisualization.vl.json"
+
+        vegaEmbed('#Location9', chart9)
+
+        let chart10 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/improvedUSCNLvisualization.vl.json"
+
+        vegaEmbed('#Location10', chart10)
 
     </script>
 
