@@ -4,7 +4,7 @@
     "text": "Protected Terrestrial and Aquatic Areas (% of total territorial area)",
     "subtitle": "World Bank Regions, 2013–2024. Source: Live data from the World Bank Data360 API"
   },
-  "width": 550,
+  "width": 450,
   "height": 320,
   "data": {
     "url": "https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_CSC&INDICATOR=WB_CSC_ER_PTD_TOTL_ZS&REF_AREA=TEA,TEC,TLA,TMN,TSA&timePeriodFrom=2013&timePeriodTo=2024",
