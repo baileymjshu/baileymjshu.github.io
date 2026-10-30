@@ -108,7 +108,7 @@
         
         <figure id="Location6"></figure>
     </section class="challenge">
- </section>
+</section>
 
 <section>
     <section class="challenge">
@@ -138,7 +138,7 @@
             </p>
         </div>
     </section>
- </section>
+</section>
 
 <section>
     <section class="challenge">
@@ -172,7 +172,42 @@
         
     </div>
     </section>
+</section>
+
+<section>
+    <section class="challenge">
+    <div class="challenge__num" aria-hidden="true">05</div>
+    <div class="challenge__body">
+    <h1>CC5. Accessing Data</h1>
+
+        <div class="chart-description">
+            <h3>World Bank API</h3>
+            <p>
+                The base URL is <a href="https://data360api.worldbank.org/data360/data".>https://data360api.worldbank.org/data360/data</a>
+            </p>
+            <p>
+                The elements needed to call the data are the database (DATABASE_ID=WB_CSC) and the indicator (INDICATOR=WB_CSC_ER_PTD_TOTL_ZS). There are also five World Bank regions used (REF_AREA=TEA,TEC,TLA,TMN,TSA) from a time period of 2013 to 2024 (timePeriodFrom=2013, timePeriodTo=2024).
+            </p>
+            <p>
+                Finally, the data returned is in JSON format. It is in a tidy format, each region has one value in one year. It needed a bit of cleaning because the regions were stored as codes rather than names.
+            </p>
+            <p>
+            Full URL: <a href="https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_CSC&INDICATOR=WB_CSC_ER_PTD_TOTL_ZS&REF_AREA=TEA,TEC,TLA,TMN,TSA&timePeriodFrom=2013&timePeriodTo=2024" style="word-break: break-all;">https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_CSC&INDICATOR=WB_CSC_ER_PTD_TOTL_ZS&REF_AREA=TEA,TEC,TLA,TMN,TSA&timePeriodFrom=2013&timePeriodTo=2024</a>
+            </p>
+        </div>
+        <figure id="Location11"></figure>
+
+        <div class="chart-description">
+            <h3>Scraping Wikipedia</h3>
+            <p>
+                Scraped Wikipedia's minimum annual leave table using pandas on <a href="https://colab.research.google.com/drive/1cq6498rrC0fPSPG4cCRU9wEAj8AumCsn"x>Colab</a>. Challenges were footnotes, number ranges, and missing values. I dropped unreliable totals, kept legal minimums, and put it into a tidy format.
+            </p>
+        </div>
+        <figure id="Location12">   </figure>
+    </div>
+
     </section>
+</section>
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
@@ -215,6 +250,14 @@
         let chart10 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/improvedUSCNLvisualization.vl.json"
 
         vegaEmbed('#Location10', chart10)
+
+        let chart11 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/protected_landvisualization.vl.json"
+
+        vegaEmbed('#Location11', chart11)
+
+        let chart12 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/annual_leave_visualization.vl.json"
+
+        vegaEmbed('#Location12', chart12)
 
     </script>
 
