@@ -12,7 +12,12 @@
   "height": {"step": 13},
   "mark": "bar",
   "encoding": {
-    "y": {"field": "country", "type": "nominal", "sort": "-x", "title": "null"},
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": "-x",
+      "title": "Country"
+    },
     "x": {"field": "days", "type": "quantitative", "title": "Days per year"},
     "color": {
       "field": "leave_type",
