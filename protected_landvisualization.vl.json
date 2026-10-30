@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Protected Terrestrial and Aquatic Areas (% of total territorial area)",
+    "subtitle": "World Bank Regions, 2013–2024. Source: Live data from the World Bank Data360 API"
+  },
+  "width": 550,
+  "height": 320,
+  "data": {
+    "url": "https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_CSC&INDICATOR=WB_CSC_ER_PTD_TOTL_ZS&REF_AREA=TEA,TEC,TLA,TMN,TSA&timePeriodFrom=2013&timePeriodTo=2024",
+    "format": {"type": "json", "property": "value"}
+  },
+  "transform": [
+    {"calculate": "toNumber(datum.OBS_VALUE)", "as": "pct"},
+    {"calculate": "toNumber(datum.TIME_PERIOD)", "as": "year"},
+    {
+      "calculate": "{'TEA': 'East Asia & Pacific', 'TEC': 'Europe & Central Asia', 'TLA': 'Latin America & Caribbean', 'TMN': 'Middle East & North Africa', 'TSA': 'South Asia'}[datum.REF_AREA]",
+      "as": "region"
+    }
+  ],
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"format": "d", "tickMinStep": 1},
+      "scale": {"domain": [2013, 2024]}
+    },
+    "y": {
+      "field": "pct",
+      "type": "quantitative",
+      "title": "% of territory protected"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "sort": {"field": "pct", "op": "max", "order": "descending"}
+    },
+    "tooltip": [
+      {"field": "region", "title": "Region"},
+      {"field": "year", "title": "Year"},
+      {"field": "pct", "title": "% protected", "format": ".1f"}
+    ]
+  },
+  "config": {}
+}
