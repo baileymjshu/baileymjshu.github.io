@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "How many paid days off does the law guarantee?",
+    "subtitle": "Minimum paid vacation days plus paid public holidays, 160 countries. Source: Wikipedia",
+    "subtitleFontStyle": "italic"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/annual_leave_clean.csv"
+  },
+  "width": 400,
+  "height": {"step": 13},
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "country", "type": "nominal", "sort": "-x", "title": "null"},
+    "x": {"field": "days", "type": "quantitative", "title": "Days per year"},
+    "color": {
+      "field": "leave_type",
+      "type": "nominal",
+      "title": "Type of Leave",
+      "scale": {
+        "domain": ["vacation_days", "public_holidays"],
+        "range": ["#310A69", "#D3A4EA"],
+        "legend": {
+          "orient": "top",
+          "labelExpr": "datum.label == 'vacation_days' ? 'Paid vacation days' : 'Paid public holidays'"
+        }
+      }
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal"},
+      {"field": "leave_type", "type": "nominal", "title": "Type of leave"},
+      {"field": "days", "type": "quantitative"}
+    ]
+  },
+  "config": {}
+}
