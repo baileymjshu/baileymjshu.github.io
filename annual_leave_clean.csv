@@ -1,0 +1,321 @@
+country,leave_type,days
+Afghanistan,vacation_days,20.0
+Albania,vacation_days,28.0
+Algeria,vacation_days,30.0
+Andorra,vacation_days,31.0
+Angola,vacation_days,22.0
+Antigua and Barbuda,vacation_days,12.0
+Argentina,vacation_days,10.0
+Armenia,vacation_days,20.0
+Australia,vacation_days,20.0
+Austria,vacation_days,25.0
+Azerbaijan,vacation_days,21.0
+Bahamas,vacation_days,10.0
+Bahrain,vacation_days,30.0
+Bangladesh,vacation_days,10.0
+Belarus,vacation_days,24.0
+Belgium,vacation_days,20.0
+Belize,vacation_days,14.0
+Benin,vacation_days,24.0
+Bolivia,vacation_days,15.0
+Bosnia and Herzegovina,vacation_days,20.0
+Botswana,vacation_days,15.0
+Brazil,vacation_days,10.0
+Brunei,vacation_days,7.0
+Bulgaria,vacation_days,20.0
+Burkina Faso,vacation_days,30.0
+Burundi,vacation_days,17.0
+Cape Verde,vacation_days,22.0
+Cambodia,vacation_days,18.0
+Canada,vacation_days,10.0
+Chad,vacation_days,24.0
+Chile,vacation_days,15.0
+China,vacation_days,5.0
+Colombia,vacation_days,15.0
+Costa Rica,vacation_days,10.0
+Croatia,vacation_days,20.0
+Cuba,vacation_days,22.0
+Cyprus,vacation_days,20.0
+Czech Republic,vacation_days,20.0
+Denmark,vacation_days,25.0
+Djibouti,vacation_days,25.0
+Dominica,vacation_days,10.0
+Dominican Republic,vacation_days,10.0
+Ecuador,vacation_days,11.0
+Egypt,vacation_days,21.0
+El Salvador,vacation_days,15.0
+Estonia,vacation_days,28.0
+Ethiopia,vacation_days,12.0
+European Union,vacation_days,28.0
+Fiji,vacation_days,10.0
+Finland,vacation_days,25.0
+France,vacation_days,25.0
+Gabon,vacation_days,20.0
+Georgia,vacation_days,24.0
+Germany,vacation_days,20.0
+Ghana,vacation_days,15.0
+Greece,vacation_days,20.0
+Grenada,vacation_days,10.0
+Guatemala,vacation_days,15.0
+Guinea,vacation_days,22.0
+Guyana,vacation_days,12.0
+Haiti,vacation_days,11.0
+Honduras,vacation_days,8.0
+Hong Kong,vacation_days,7.0
+Hungary,vacation_days,20.0
+Iceland,vacation_days,24.0
+India,vacation_days,25.0
+Indonesia,vacation_days,12.0
+Iran,vacation_days,26.0
+Ireland,vacation_days,20.0
+Israel,vacation_days,12.0
+Italy,vacation_days,20.0
+Ivory Coast,vacation_days,20.0
+Japan,vacation_days,10.0
+Jersey,vacation_days,10.0
+Jordan,vacation_days,14.0
+Kazakhstan,vacation_days,24.0
+Kenya,vacation_days,21.0
+Kiribati,vacation_days,30.0
+Kosovo,vacation_days,20.0
+Kuwait,vacation_days,30.0
+Latvia,vacation_days,20.0
+Lebanon,vacation_days,15.0
+Lesotho,vacation_days,12.0
+Liberia,vacation_days,10.0
+Lithuania,vacation_days,20.0
+Luxembourg,vacation_days,26.0
+Madagascar,vacation_days,22.0
+Malaysia,vacation_days,8.0
+Malta,vacation_days,27.0
+Marshall Islands,vacation_days,26.0
+Mauritania,vacation_days,15.0
+Mauritius,vacation_days,22.0
+Mexico,vacation_days,12.0
+Moldova,vacation_days,28.0
+Mongolia,vacation_days,15.0
+Montenegro,vacation_days,20.0
+Morocco,vacation_days,15.0
+Mozambique,vacation_days,10.0
+Myanmar,vacation_days,10.0
+Nepal,vacation_days,15.0
+Netherlands,vacation_days,20.0
+New Zealand,vacation_days,20.0
+Nicaragua,vacation_days,11.0
+Niger,vacation_days,30.0
+North Macedonia,vacation_days,20.0
+Norway,vacation_days,25.0
+Oman,vacation_days,22.0
+Pakistan,vacation_days,20.0
+Panama,vacation_days,30.0
+Papua New Guinea,vacation_days,10.0
+Paraguay,vacation_days,10.0
+Peru,vacation_days,11.0
+Philippines,vacation_days,5.0
+Poland,vacation_days,20.0
+Portugal,vacation_days,22.0
+Puerto Rico,vacation_days,15.0
+Qatar,vacation_days,15.0
+Romania,vacation_days,20.0
+Russia,vacation_days,28.0
+Rwanda,vacation_days,15.0
+Samoa,vacation_days,10.0
+Saint Lucia,vacation_days,14.0
+São Tomé and Príncipe,vacation_days,25.0
+Saudi Arabia,vacation_days,21.0
+Senegal,vacation_days,20.0
+Serbia,vacation_days,20.0
+Seychelles,vacation_days,21.0
+Singapore,vacation_days,7.0
+Slovakia,vacation_days,20.0
+Slovenia,vacation_days,20.0
+Solomon Islands,vacation_days,15.0
+Somalia,vacation_days,13.0
+South Africa,vacation_days,15.0
+South Korea,vacation_days,15.0
+South Sudan,vacation_days,20.0
+Spain,vacation_days,22.0
+Sri Lanka,vacation_days,20.0
+Suriname,vacation_days,12.0
+Sweden,vacation_days,25.0
+Switzerland,vacation_days,20.0
+Syria,vacation_days,24.0
+Taiwan,vacation_days,3.0
+Tanzania,vacation_days,20.0
+Thailand,vacation_days,6.0
+Togo,vacation_days,22.0
+Trinidad and Tobago,vacation_days,10.0
+Tunisia,vacation_days,12.0
+Turkey,vacation_days,12.0
+Uganda,vacation_days,15.0
+Ukraine,vacation_days,24.0
+United Arab Emirates,vacation_days,30.0
+United Kingdom,vacation_days,28.0
+United States,vacation_days,0.0
+Uruguay,vacation_days,20.0
+Vanuatu,vacation_days,15.0
+Venezuela,vacation_days,15.0
+Vietnam,vacation_days,12.0
+Yemen,vacation_days,22.0
+Zambia,vacation_days,20.0
+Zimbabwe,vacation_days,22.0
+Afghanistan,public_holidays,15.0
+Albania,public_holidays,12.0
+Algeria,public_holidays,11.0
+Andorra,public_holidays,14.0
+Angola,public_holidays,11.0
+Antigua and Barbuda,public_holidays,11.0
+Argentina,public_holidays,19.0
+Armenia,public_holidays,12.0
+Australia,public_holidays,10.0
+Austria,public_holidays,13.0
+Azerbaijan,public_holidays,19.0
+Bahamas,public_holidays,10.0
+Bahrain,public_holidays,14.0
+Bangladesh,public_holidays,11.0
+Belarus,public_holidays,9.0
+Belgium,public_holidays,10.0
+Belize,public_holidays,13.0
+Benin,public_holidays,13.0
+Bolivia,public_holidays,11.0
+Bosnia and Herzegovina,public_holidays,9.0
+Botswana,public_holidays,14.0
+Brazil,public_holidays,13.0
+Brunei,public_holidays,11.0
+Bulgaria,public_holidays,12.0
+Burkina Faso,public_holidays,15.0
+Burundi,public_holidays,13.0
+Cape Verde,public_holidays,0.0
+Cambodia,public_holidays,27.0
+Canada,public_holidays,7.0
+Chad,public_holidays,3.0
+Chile,public_holidays,15.0
+China,public_holidays,13.0
+Colombia,public_holidays,18.0
+Costa Rica,public_holidays,9.0
+Croatia,public_holidays,13.0
+Cuba,public_holidays,9.0
+Cyprus,public_holidays,14.0
+Czech Republic,public_holidays,13.0
+Denmark,public_holidays,10.0
+Djibouti,public_holidays,10.0
+Dominica,public_holidays,12.0
+Dominican Republic,public_holidays,13.0
+Ecuador,public_holidays,12.0
+Egypt,public_holidays,17.0
+El Salvador,public_holidays,11.0
+Estonia,public_holidays,12.0
+Ethiopia,public_holidays,13.0
+European Union,public_holidays,0.0
+Fiji,public_holidays,12.0
+Finland,public_holidays,11.0
+France,public_holidays,11.0
+Gabon,public_holidays,14.0
+Georgia,public_holidays,15.0
+Germany,public_holidays,10.0
+Ghana,public_holidays,13.0
+Greece,public_holidays,9.0
+Grenada,public_holidays,13.0
+Guatemala,public_holidays,10.0
+Guinea,public_holidays,11.0
+Guyana,public_holidays,0.0
+Haiti,public_holidays,16.0
+Honduras,public_holidays,11.0
+Hong Kong,public_holidays,17.0
+Hungary,public_holidays,13.0
+Iceland,public_holidays,14.0
+India,public_holidays,10.0
+Indonesia,public_holidays,18.0
+Iran,public_holidays,27.0
+Ireland,public_holidays,10.0
+Israel,public_holidays,9.0
+Italy,public_holidays,12.0
+Ivory Coast,public_holidays,14.0
+Japan,public_holidays,0.0
+Jersey,public_holidays,9.0
+Jordan,public_holidays,10.0
+Kazakhstan,public_holidays,16.0
+Kenya,public_holidays,10.0
+Kiribati,public_holidays,16.0
+Kosovo,public_holidays,12.0
+Kuwait,public_holidays,13.0
+Latvia,public_holidays,12.0
+Lebanon,public_holidays,22.0
+Lesotho,public_holidays,10.0
+Liberia,public_holidays,11.0
+Lithuania,public_holidays,14.0
+Luxembourg,public_holidays,11.0
+Madagascar,public_holidays,13.0
+Malaysia,public_holidays,11.0
+Malta,public_holidays,14.0
+Marshall Islands,public_holidays,11.0
+Mauritania,public_holidays,7.0
+Mauritius,public_holidays,16.0
+Mexico,public_holidays,7.0
+Moldova,public_holidays,14.0
+Mongolia,public_holidays,0.0
+Montenegro,public_holidays,16.0
+Morocco,public_holidays,13.0
+Mozambique,public_holidays,9.0
+Myanmar,public_holidays,14.0
+Nepal,public_holidays,13.0
+Netherlands,public_holidays,11.0
+New Zealand,public_holidays,12.0
+Nicaragua,public_holidays,9.0
+Niger,public_holidays,12.0
+North Macedonia,public_holidays,12.0
+Norway,public_holidays,10.0
+Oman,public_holidays,9.0
+Pakistan,public_holidays,15.0
+Panama,public_holidays,10.0
+Papua New Guinea,public_holidays,9.0
+Paraguay,public_holidays,12.0
+Peru,public_holidays,12.0
+Philippines,public_holidays,12.0
+Poland,public_holidays,14.0
+Portugal,public_holidays,9.0
+Puerto Rico,public_holidays,0.0
+Qatar,public_holidays,10.0
+Romania,public_holidays,17.0
+Russia,public_holidays,14.0
+Rwanda,public_holidays,11.0
+Samoa,public_holidays,11.0
+Saint Lucia,public_holidays,13.0
+São Tomé and Príncipe,public_holidays,9.0
+Saudi Arabia,public_holidays,9.0
+Senegal,public_holidays,12.0
+Serbia,public_holidays,11.0
+Seychelles,public_holidays,13.0
+Singapore,public_holidays,11.0
+Slovakia,public_holidays,14.0
+Slovenia,public_holidays,13.0
+Solomon Islands,public_holidays,0.0
+Somalia,public_holidays,9.0
+South Africa,public_holidays,12.0
+South Korea,public_holidays,17.0
+South Sudan,public_holidays,12.0
+Spain,public_holidays,14.0
+Sri Lanka,public_holidays,20.0
+Suriname,public_holidays,18.0
+Sweden,public_holidays,9.0
+Switzerland,public_holidays,7.0
+Syria,public_holidays,13.0
+Taiwan,public_holidays,12.0
+Tanzania,public_holidays,17.0
+Thailand,public_holidays,13.0
+Togo,public_holidays,0.0
+Trinidad and Tobago,public_holidays,14.0
+Tunisia,public_holidays,7.0
+Turkey,public_holidays,14.5
+Uganda,public_holidays,13.0
+Ukraine,public_holidays,13.0
+United Arab Emirates,public_holidays,14.0
+United Kingdom,public_holidays,0.0
+United States,public_holidays,0.0
+Uruguay,public_holidays,5.0
+Vanuatu,public_holidays,0.0
+Venezuela,public_holidays,14.0
+Vietnam,public_holidays,11.0
+Yemen,public_holidays,15.0
+Zambia,public_holidays,11.0
+Zimbabwe,public_holidays,11.0
