@@ -8,7 +8,7 @@
     "subtitleFontStyle": "italic",
     "anchor": "middle"
   },
-  "width": 300,
+  "width": "container",
   "height": 250,
   "layer": [
     {
