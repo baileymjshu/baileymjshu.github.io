@@ -5,17 +5,15 @@
 <head>    
     
     <link rel="stylesheet" type="text/css" href="Example3.css">
-    <title>Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+    <title>Bailey Shuster</title>
 
     <link rel="icon" type="image/png" href="favicon.png">
     
-    <!-- This is a link to the vega-lite packages which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
 
     <style>
-        /* CSS styles can be defined here, or in a separate CSS file */
         #chartGrid {
             display: flex;
         }
@@ -25,242 +23,27 @@
 
 <body> 
     <div style="text-align: center;">
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        PP434 Portfolio
+    <h1 class="big" style="margin-bottom: 0px;"> 
+        Bailey Shuster
     </h1>
     <p style="margin-top: 0px; color: #0F0F75">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Bailey Shuster | <a href="https://www.linkedin.com/in/baileyshuster/?isSelfProfile=true">LinkedIn</a> | <a
+        <a href="index.html">Bailey Shuster</a> | <a href="https://www.linkedin.com/in/baileyshuster/?isSelfProfile=true">LinkedIn</a> | <a
             href="https://github.com/baileymjshu">GitHub</a>
     </p>
     </div>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This is my portfolio for PP434 Automated Data Visualisation for Policymaking. It is compiled of ten class challenges given over the term.
-    </h3>
+     
+    <h3 style="text-align: center;"> MPA at the London School of Economics and Political Science</h3>
+
+<section>
+    <p>
+        <a href="portfolio.html">PP434 Portfolio</a>
+    </p>
+    <p>
+        <a href="DevolutionDashboard.html">Devolution Dashboard</a>
+    </p>   
     
-<section>
-    <section class="challenge">
-  <div class="challenge__num" aria-hidden="true">01</div>
-  <div class="challenge__body">
-    <h1>CC1. Hosting</h1> <!-- New main heading for this section only -->
-
-        <div class="chart-description">
-            <h3>Chart 1: Declining Populations</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                This chart estimates the population decline for seven countries over the next century.
-            </p>
-        </div>
-
-        <!-- This element will contain our vega-lite chart -->
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-
-        <div class="chart-description">
-            <h3>Chart 2: Comparing Four Ecnomies</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                This comparison chart compares the growth of four economies from 1980 to 2025.
-            </p>
-        </div>
-
-        <!-- This element will contain our vega-lite chart -->
-        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-
-        <div class="chart-description">
-            <h3>Chart 3: Food - CO2 greenhouse gas emissions</h3>
-            <p>
-                A third chart estimating greenhouse gas emissions produced by various food sources.
-            </p>
-        </div>
-
-        <figure id="Location3"></figure>
-    </section class="challenge">
 </section>
-
-<section>
-    <section class="challenge">
-  <div class="challenge__num" aria-hidden="true">02</div>
-  <div class="challenge__body">
-    <h1> CC2. Building</h1>
-        <div class="chart-description">
-            <h3>Chart 4: Rural Income in the United States</h3>
-            <p>
-                The chart below describes pre-tax income in the rural United States.
-            </p>
-        </div>
-
-        <figure id="Location4"></figure>
-
-         <div class="chart-description">
-            <h3>Chart 5: Weekly Global Burnt Areas in 2026</h3>
-            <p> 
-                2026 had a significant amount of wildfires. The chart below illustrates the amount of land burned every month through September in 2026.
-            </p>
-        </div>
-
-        <figure id="Location5"></figure>
-
-        <div class="chart-description">
-            <h3>Chart 6: Average Rent Change Percentage in Islington</h3>
-            <p>
-                The borough of Islington is in London. The chart tracks average rent change percentage from 2016 to 2026.
-            </p>
-        </div>
-        
-        <figure id="Location6"></figure>
-    </section class="challenge">
-</section>
-
-<section>
-    <section class="challenge">
-    <div class="challenge__num" aria-hidden="true">03</div>
-    <div class="challenge__body">
-    <h1>CC3. Policy Debate</h1>
-        
-        <div class="chart-description">
-            <h3>Chart 7: Colorado Wolf Depredations by Livestock</h3>
-            <p>
-                Coloradoans voted for wolves in 2020, but unless the compensation fund grows with livestock losses, reintroduction should be paused for reevaluation.
-            </p>
-        </div>
-        
-        <figure id="Location7"></figure>
-            <p>
-                Livestock losses rose from 29 animals in 2024 to 67 so far in 2026, so compensation funding must grow or reintroduction should pause.
-            </p>    
-    
-        <div class="chart-description">
-            <h3>Chart 8: Colorado Depredation Compensation Budget</h3>
-        </div>
-    
-        <figure id="Location8"></figure>
-            <p>
-                CPW paid or approved about $753,000 for 2025–26 wolf losses, more than double the $350,000 fund. Without more funding, reintroduction cannot fairly continue.
-            </p>
-        </div>
-    </section>
-</section>
-
-<section>
-    <section class="challenge">
-    <div class="challenge__num" aria-hidden="true">04</div>
-    <div class="challenge__body">
-    <h1>CC4. Replication</h1>
-
-        <div class="chart-description">
-            <h3>Chart 9: US Legislation Affecting Protest Rights</h3>
-            <p>
-             This chart is located on a webpage by the U.S. Center for Not-for-Profit Law (USCNL) titled "Analysis of US Anti-Protest Bills". The data comes from their US Protest Law Tracker.   
-            </p>
-            <img src="UCNL_protest.png" width="500">
-        </div>
-
-        <div class="chart-description">
-            <h3>My Replication of "US Legislation Affecting Protest Rights" Chart</h3>
-            <p>
-                Here is my replication and improvement of the above chart.
-            </p>
-        </div>
-        <figure id="Location9"></figure>    
-
-        <div class="chart-description">
-            <h3>My Improved Version of "US Legislation Affecting Protest Rights" Chart</h3>
-            <p>
-                This chart improves the U.S. Center for Not-for-Profit Law's "US Legislation Affecting Protest Rights: By Year" graphic. Each bar now starts with the enacted bills and each year's total appears at the end of the bars. hort notes mark the protest movements that came before the biggest spikes. Hover over any segment to see its exact count.
-            </p>
-        </div>
-        <figure id="Location10"></figure>
-        
-    </div>
-    </section>
-</section>
-
-<section>
-    <section class="challenge">
-    <div class="challenge__num" aria-hidden="true">05</div>
-    <div class="challenge__body">
-    <h1>CC5. Accessing Data</h1>
-
-        <div class="chart-description">
-            <h3>World Bank API</h3>
-            <p>
-                The base URL is <a href="https://data360api.worldbank.org/data360/data".>https://data360api.worldbank.org/data360/data</a>
-            </p>
-            <p>
-                The elements needed to call the data are the database (DATABASE_ID=WB_CSC) and the indicator (INDICATOR=WB_CSC_ER_PTD_TOTL_ZS). There are also five World Bank regions used (REF_AREA=TEA,TEC,TLA,TMN,TSA) from a time period of 2013 to 2024 (timePeriodFrom=2013, timePeriodTo=2024).
-            </p>
-            <p>
-                Finally, the data returned is in JSON format. It is in a tidy format, each region has one value in one year. It needed a bit of cleaning because the regions were stored as codes rather than names.
-            </p>
-            <p>
-            Full URL: <a href="https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_CSC&INDICATOR=WB_CSC_ER_PTD_TOTL_ZS&REF_AREA=TEA,TEC,TLA,TMN,TSA&timePeriodFrom=2013&timePeriodTo=2024" style="word-break: break-all;">https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_CSC&INDICATOR=WB_CSC_ER_PTD_TOTL_ZS&REF_AREA=TEA,TEC,TLA,TMN,TSA&timePeriodFrom=2013&timePeriodTo=2024</a>
-            </p>
-        </div>
-        <figure id="Location11"></figure>
-
-        <div class="chart-description">
-            <h3>Scraping Wikipedia</h3>
-            <p>
-                Scraped Wikipedia's minimum annual leave table using pandas on <a href="https://colab.research.google.com/drive/1cq6498rrC0fPSPG4cCRU9wEAj8AumCsn"x>Colab</a>. Challenges were footnotes, number ranges, and missing values. I dropped unreliable totals, kept legal minimums, and put it into a tidy format.
-            </p>
-        </div>
-        <figure id="Location12">   </figure>
-    </div>
-
-    </section>
-</section>
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
-    <script>
-
-        let chart1 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine3.json"; 
-
-        vegaEmbed('#Location1', chart1)
-
-        let chart2 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine10.json";
-
-        vegaEmbed('#Location2', chart2)
-
-        let chart3 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartBar4.json"
-        vegaEmbed('#Location3', chart3)
-
-        let chart4 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/ruralvisualization.vl.json"
-
-        vegaEmbed('#Location4', chart4)
-
-        let chart5 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/burnvisualization.vl.json"
-
-        vegaEmbed('#Location5', chart5)
-
-        let chart6 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/islingtonrentchange.vl.json"
-
-        vegaEmbed('#Location6', chart6)
-
-        let chart7 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wolfvisualization.vl.json"
-
-        vegaEmbed('#Location7', chart7)
-
-        let chart8 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wolfbudgetvisualization.vl.json"
-
-        vegaEmbed('#Location8', chart8)
-
-        let chart9 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/USCNLvisualization.vl.json"
-
-        vegaEmbed('#Location9', chart9)
-
-        let chart10 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/improvedUSCNLvisualization.vl.json"
-
-        vegaEmbed('#Location10', chart10)
-
-        let chart11 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/protected_landvisualization.vl.json"
-
-        vegaEmbed('#Location11', chart11)
-
-        let chart12 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/annual_leave_visualization.vl.json"
-
-        vegaEmbed('#Location12', chart12)
-
-    </script>
 
 </body>
-    
+
 </html>

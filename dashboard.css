@@ -1,0 +1,27 @@
+/* Wider page for the dashboard only, so 3 charts fit side by side */
+body.dashboard {
+  max-width: 1100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 3 x 2 grid */
+#charts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 2.5em;
+}
+
+/* Each chart is a white block, matching your sections */
+.chart {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  min-width: 0;
+}
+
+/* Fewer columns on smaller screens */
+@media (max-width: 900px) { #charts { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { #charts { grid-template-columns: 1fr; } }
