@@ -15,12 +15,16 @@
         }
         
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
 </head>
 
 <body> 
+    <body class="dashboard"> 
     <div style="text-align: center;">
     <h1 class="big" style="margin-bottom: 0px;"> 
-        CC6. Devolution Dashboard
+        CC6. Loops
     </h1>
     <p style="margin-top: 0px; color: #0F0F75">
         <a href="index.html">Bailey Shuster</a> | <a href="https://www.linkedin.com/in/baileyshuster/?isSelfProfile=true">LinkedIn</a> | <a
@@ -29,16 +33,42 @@
     </div>
     
     <section>
-    <h1>Devolution Dashboard</h1>
+    <h1 style="text-align: center;">
+        Devolution Dashboard
+    </h1>
+        
     <p>
-      The 
-    </p>
+      Average house prices since 2018 in the four UK nations, plus Longon and the North-East, shown on the same scale and arranged in a grid using a JavaScript loop. Scotland and Wales set their own tax on buying a home, while England and Northern Ireland use UK Stamp Duty.
     <p>
-      <a href="PASTE_YOUR_PUBLIC_COLAB_LINK_HERE" target="_blank">View the Google Colab notebook.</a>
+      
+      <a href="https://colab.research.google.com/drive/1PofVBMBGv_NLSXER433hqChYuxcG-1Cn">View the Google Colab notebook.</a>
     </p>
+    
+    <div id="charts">
+        <div class="chart" id="chart0"></div>
+        <div class="chart" id="chart1"></div>
+        <div class="chart" id="chart2"></div>
+        <div class="chart" id="chart3"></div>
+        <div class="chart" id="chart4"></div>
+        <div class="chart" id="chart5"></div>
+    </div>
   </section>
 
+<script>
+    let chartFiles = [
+        "nireland.json",
+        "scotland.json",
+        "wales.json",
+        "england.json",
+        "northeast.json",
+        "london.json"
+    ]
+    let baseUrl = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/"
 
-
+    for (let i = 0; i < chartFiles.length; i++) {
+            vegaEmbed(`#chart${i}`, `${baseUrl}${chartFiles[i]}`, {"actions": false});
+    }
+</script>
+</body>
 </body>
 </html>
