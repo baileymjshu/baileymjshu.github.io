@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "South Wales",
+    "subtitle": "Source: Octopus Energy API, Flexible Octopus tariff (Direct Debit)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "#666666",
+    "anchor": "middle"
+  },
+  "width": "container",
+  "height": 220,
+  "data": {
+    "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/data_UK_Octopus-K.json",
+    "format": {"type": "json", "property": "results"}
+  },
+  "transform": [
+    {"filter": "datum.payment_method == 'DIRECT_DEBIT'"},
+    {
+      "calculate": "timeOffset('hours', toDate(datum.valid_from), 1)",
+      "as": "start"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "interpolate": "step-after",
+    "strokeWidth": 2,
+    "color": "#00B140"
+  },
+  "encoding": {
+    "x": {
+      "field": "start",
+      "type": "temporal",
+      "title": null,
+      "scale": {"type": "utc", "domain": ["2022-11-01", "2026-10-31"]},
+      "axis": {
+        "tickCount": {"interval": "month", "step": 6},
+        "labelExpr": "[utcFormat(datum.value, '%b'), utcFormat(datum.value, '%Y')]",
+        "labelAngle": 0,
+        "grid": true
+      }
+    },
+    "y": {
+      "field": "value_exc_vat",
+      "type": "quantitative",
+      "title": "Pence per kWh (excl. VAT)",
+      "scale": {"domain": [0, 50]}
+    },
+    "tooltip": [
+      {
+        "field": "start",
+        "type": "temporal",
+        "title": "Price from",
+        "format": "%B %Y"
+      },
+      {
+        "field": "value_exc_vat",
+        "type": "quantitative",
+        "title": "p/kWh (excl. VAT)",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {}
+}
