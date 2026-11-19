@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Wildfire Detections Per 100km² by Council, Wales 2025",
+    "subtitle": "Source: NASA FIRMS, VIIRS S-NPP Satellite",
+    "subtitleFontSize": 11,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "width": 320,
+  "height": 380,
+  "projection": {"type": "mercator"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/map-data/refs/heads/main/gbr/LAD_WLS_2026_05.json",
+    "format": {"type": "topojson", "feature": "geog"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wales_fire_rates.csv"
+        },
+        "key": "geo_id",
+        "fields": ["fires", "fires_per_100km2"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white"},
+  "encoding": {
+    "color": {
+      "field": "fires_per_100km2",
+      "type": "quantitative",
+      "title": "Fires per 100 km²",
+      "scale": {"scheme": "oranges"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Council"},
+      {"field": "fires", "type": "quantitative", "title": "Fire detections"},
+      {
+        "field": "fires_per_100km2",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Per 100km²"
+      }
+    ]
+  },
+  "config": {}
+}
