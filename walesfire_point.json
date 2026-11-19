@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Wildfire Detections in Wales, 2025",
+    "subtitle": "Source: NASA FIRMS, VIIRS S-NPP Satellite",
+    "subtitleFontSize": 11,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
+  "width": 320,
+  "height": 380,
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/map-data/refs/heads/main/gbr/LAD_WLS_2026_05.json",
+        "format": {"type": "topojson", "feature": "geog"}
+      },
+      "mark": {"type": "geoshape", "fill": "#e3e3e3", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/wales_fire_points.csv"
+      },
+      "mark": {"type": "circle", "color": "#FC6400", "opacity": 0.5},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {
+          "field": "frp",
+          "type": "quantitative",
+          "title": "Fire intensity (megawatts)",
+          "scale": {"type": "sqrt", "range": [5, 300]}
+        },
+        "tooltip": [
+          {"field": "name", "type": "nominal", "title": "Council"},
+          {"field": "acq_date", "type": "nominal", "title": "Date"},
+          {
+            "field": "frp",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Intensity (MW)"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
