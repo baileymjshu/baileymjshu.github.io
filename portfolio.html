@@ -206,6 +206,7 @@
         <figure id="Location12">   </figure>
     </div>
     </section>
+    </section>
 
 <section>
 <section class="challenge">
@@ -227,10 +228,28 @@
   <div class="challenge__num" aria-hidden="true">07</div>
   <div class="challenge__body">
     <h1>CC7. Maps</h1>
+    <p>Note: NASA FIRMS data was complicated, so Claude was used to help interpret and clean data.</p>
+    <p><a href="https://colab.research.google.com/drive/1qixR_WfDsF_7avutvC4QXVryoZ6H21vE?usp=sharing">Colab Notebook</a></p>
 
+   <div class="chart-description">
+    <h3>Wildfire Detections in Wales, 2025</h3>
+    <p>
+        Each circle marks one of 624 satellite fire detections in Wales in 2025, sized by fire intensity.
+    </p>
+    </div>
+    <figure id="Location13"></figure>
+    
+    <div class="chart-description">
+        <h3>Wildfire Detections Per 100km² by Council, Wales 2025</h3>
+        <p>
+            Councils are shaded by wildfire detections per 100km² in 2025. 
+        </p>
+    </div>
+    <figure id = "Location14"> </figure>
 
     </div>
-    </section>
+</section>
+</section>
 
     <script>
 
@@ -280,6 +299,14 @@
         let chart12 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/annual_leave_visualization.vl.json"
 
         vegaEmbed('#Location12', chart12)
+
+        let chart13 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/walesfire_point.json"
+
+        vegaEmbed('#Location13', chart13)
+
+        let chart14 = "https://raw.githubusercontent.com/baileymjshu/baileymjshu.github.io/refs/heads/main/walesfire_rates.json"
+
+        vegaEmbed('#Location14', chart14)
 
     </script>
 
